@@ -1,0 +1,162 @@
+.head1{
+  background-color: white;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headname, .headlocation, .headtelephone{
+  height: inherit;
+  width: 400px;
+  background-color: white;
+  font-family: "Montserrat";
+  font-size: 25px;
+  padding-top: 17px;
+}
+.headname{
+  font-weight: 600;
+  padding-left: 50px;
+}
+.headlocation, .headtelephone{
+  text-align: center;
+}
+/* Боковое меню */
+.sidenav {
+  /*height: 75%; /* Полная высота: удалите это, если хотите "auto" высоту */
+  /*width: 20%; /* Установите ширину боковой панели */
+  position: relative; /* absolute - оставайтесь на месте при прокрутке */
+  z-index: 1; /* Оставайтесь вверху */
+  top: 0; /* Оставайтесь внизу */
+  left: 0;
+  background-color: white; /* Черный */
+  overflow-x: hidden; /* Отключить горизонтальную прокрутку */
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 20px 0;
+}
+.menu{
+  width: 0%;
+}
+.sidenav a {
+  padding: 6px 8px 6px 0;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 25px;
+  color: #292b2e;
+  /*color: #818181;*/
+  display: block;
+}
+.sidenav a:hover {
+  /*color: black;*/
+  color: #818181;
+}
+
+.active a{
+  font-weight: bold;
+}
+/* Стилизация страницы content */
+#main{
+  width: 80%;
+}
+.main {
+  /*margin-left: 100px;*/
+  padding: 20px 0 20px 0;
+  margin: 0 50px;
+  font-family: Montserrat;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+#pronas{
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
+}
+/* На меньших экранах, где высота меньше 450 пикселей, изменяется стиль боковой панели (меньше отступов и меньший размер шрифта) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+header{
+  background-size: cover;
+  transition:all 1s;
+}
+
+footer{
+  background: white;
+  font-family: Montserrat;
+}
+#foottable {
+  margin: 20px 50px;
+  width: 93%;
+  border-bottom: 2px black solid;
+  border-right: 100px white solid;
+  border-left: 100px white solid;
+}
+th{
+  font-weight: 500;
+  padding: 5px 0;
+  border-bottom: 2px black solid;
+  border-right: 100px white solid;
+  border-left: 100px white solid;
+  margin: 0 25px;
+}
+.col1, .col2, .col3{
+  width: 33%;
+  padding: 20px 0;
+}
+.col1 a {
+  text-decoration: none;
+  color: #292b2e;
+  display: block;
+  font-weight: 500;
+}
+.col1 a:hover {
+  color: #818181;
+}
+.link{
+  padding: 5px 20px;
+}
+.social{
+  margin: 0 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.email form{
+  width: 75%;
+  margin: 0 45px;
+  position: relative;
+}
+.imputemail{
+  width: 100% !important;
+  height: 50px;
+  padding-left: 15px;
+  border-radius: 50px;
+  border: 2px solid #292b2e;
+  background: none;
+  outline: none;
+  font-family: inherit;
+}
+.imputemail:focus{
+  border-color:#818181;
+}
+.emailbut{
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: none;
+  position: absolute;
+  right: -20px;
+  top: 3px;
+}
+.emailbut:before{
+  content: "\f0e0";
+  font-family: FontAwesome;
+  color: black;
+}
+.credits h4{
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 300;
+}
